@@ -1,0 +1,28 @@
+.trust {
+
+	&__content {
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	&--text-container {
+		display: flex;
+		 flex-direction: column;
+		 justify-content: center;
+	}
+
+	p {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 1.5rem;
+		color: #555555;
+		letter-spacing: 1px;
+		max-width: 650px;
+	}
+
+	img {
+		height: 545px;
+	}
+		
+}

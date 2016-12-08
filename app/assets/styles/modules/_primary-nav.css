@@ -13,6 +13,7 @@
 	li {
 		padding-right: 20px;
 		flex-direction: row;
+		list-style: none;
 	}
 
 	a {
@@ -23,5 +24,11 @@
 		font-weight: 400;
 		padding: 12px 0;
 		flex-direction: row;
+		transition: color .5s;
+	}
+
+	a:hover,
+	a:active {
+		color: $mainOrange;
 	}
 }

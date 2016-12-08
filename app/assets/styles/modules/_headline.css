@@ -4,29 +4,14 @@
 	letter-spacing: 1px;
 	font-weight: 400;
 	color: $mainBlue;
-	max-width: 635px;
+	max-width: 655px;
 	margin: 0 auto;
 
-
-/*	@mixin atSmall {
-		font-size: 2.875rem;
-	}
-	
-	&--centered {
-		text-align: center;
-	}*/
 
 	&--orange {
 		color: $mainOrange;
 	}
-
-	&--small {
-		font-size: 2rem;
-		/*@mixin atSmall {
-			font-size: 1.875rem;
-		}*/
-	}
-
+	
 	&--narrow {
 		max-width: 302px;
 		margin: 0 auto;
@@ -38,5 +23,9 @@
 
 	&--padding-small {
 		padding: 10px;
+	}
+
+	&--left {
+		margin-left: 0;
 	}
 }

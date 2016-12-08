@@ -1,3 +1,8 @@
+* {
+	box-sizing: border-box;
+
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: #555;
@@ -8,12 +13,13 @@ img {
   height: auto;
 }
 
-ul {
-	list-style: none;
+li {
+	list-style-type:none;
 }
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 

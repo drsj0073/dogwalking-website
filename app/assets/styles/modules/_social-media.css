@@ -1,0 +1,15 @@
+.social-media {
+
+	margin: 40px 0 40px 0;
+
+	background-color: #EFEFEF;
+	
+	p {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 24px;
+		color: #3F5765;
+		letter-spacing: 1px;
+		margin: 0 0 21px 0;
+	}
+}
