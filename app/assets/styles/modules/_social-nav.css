@@ -16,17 +16,30 @@
 	}
 
 	i {
-		font-size: 55px;
+		font-size: 40px;
 		color: #3F5765;
-		text-shadow: 10px 10px 10px #9B9B9B;
-		transition: all 0.5s;
-		margin-right: 68px;
-		margin-left: 68px;
+		margin-right: 20px;
+		margin-left: 20px;
+
+		@mixin atSmall {
+			margin-right: 68px;
+			margin-left: 68px;
+		}
+
+		@mixin atMedium {
+			text-shadow: 10px 10px 10px #9B9B9B;
+			transition: all 0.5s;
+			font-size: 55px;
+		}
+
 
 		&:hover,
 		&:active {
-		color: $mainOrange;
-		transform: scale(1.2);
+			
+		@mixin atMedium {
+			color: $mainOrange;
+			transform: scale(1.2);
+			}
 		}
 	}
 

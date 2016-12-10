@@ -18,13 +18,21 @@
 
 	a {
 		font-family: 'Lato', sans-serif;
-		font-size: 1.5rem;
+		font-size: .8rem;
 		letter-spacing: 1px;
 		color: $mainBlue;
 		font-weight: 400;
 		padding: 12px 0;
 		flex-direction: row;
 		transition: color .5s;
+
+		@mixin atSmall {
+			font-size: 1.2rem;
+		}
+
+		@mixin atMedium {
+			font-size: 1.5rem;
+		}
 	}
 
 	a:hover,

@@ -1,13 +1,13 @@
 .site-footer {
-	background-color: $mainBlue;
+	background-color: #fff;
 	color: #fff;
-	padding: .5rem 0;
 	text-align: center;
 
-/*
-		@mixin atMedium {
-			display: inline;
-			margin-right: 1.4rem;
-		}
-	}*/
+	p {
+		font-family: 'Lato', sans-serif;
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: #3F5765;
+		letter-spacing: 1px;
+	}
 }

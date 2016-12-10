@@ -1,18 +1,24 @@
 .btn {
   font-family: 'Lato', sans-serif;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   background-color: $mainBlue;
   color: #FFF;
-  padding: 1rem 2.5rem;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
-  transition: all .5s ease-in-out;
+  padding: .5rem 1rem;
+  
+  @mixin atMedium {
+     box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+     transition: all .5s ease-in-out;
+  }
 
   &:hover,
   &:active {
-    background-color: $mainOrange;
-    box-shadow: 20px 20px 10px rgba(0,0,0,0.3);
-    transform: scale(1.1);
+
+      @mixin atMedium {
+        background-color: $mainOrange;
+        box-shadow: 20px 20px 10px rgba(0,0,0,0.3);
+        transform: scale(1.1);
+      }
   }
 
   &--orange {
@@ -21,15 +27,22 @@
 
   &--orange:hover,
   &--orange:active {
-    background-color: $mainBlue;
+    
+    @mixin atMedium {
+      background-color: $mainBlue;
+    }
   }
 
   &--large {
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     font-weight: 400;
+
+    @mixin atSmall {
+      padding: 1rem 2rem;
+    }
   }
 
-/*    @mixin atSmall {
-      font-size: 1.25rem;
-    }*/
+    @mixin atSmall {
+      padding: 1rem 2.5rem;
+    }
   }

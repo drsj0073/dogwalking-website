@@ -1,6 +1,6 @@
 .who-we-are {
 
-	background-color: #f4f4f4;
+	background-color: #F4F8F8;
 
 	&__gallery {
 		flex-direction: row;
@@ -9,11 +9,21 @@
 
 	img {
 		margin-right: 15px;
-		transition: transform .5s;
+		transition: transform .5s; 
+		min-width: 100%;
+
+		@mixin atMedium {
+			min-width: 15%;
+			height: auto;
+		}
 	}
 
 	img:hover {
-		transform: scale(1.1);
+
+		@mixin atLarge {
+			transform: scale(1.1);
+		}
+		
 	}
 
 	img:last-child {
@@ -23,18 +33,26 @@
 	p {
 		font-family: 'Lato', sans-serif;
 		font-weight: 300;
-		font-size: 1.5rem;
+		font-size: 1.1rem;
 		color: #555555;
 		letter-spacing: 1px;
 		max-width: 746px;
 		text-align: center;
+
+		@mixin atSmall {
+			font-size: 1.5rem;
+		}
 	}
 
 	.subtitle {
 		font-family: 'Kalam', cursive;
-		font-size: 32px;
+		font-size: 1.3rem;
 		color: $mainBlue;
 		letter-spacing: 1.33px;
+
+		@mixin atSmall {
+			font-size: 2rem;
+		}
 	}
 }
 

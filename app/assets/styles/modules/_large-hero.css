@@ -3,22 +3,26 @@
 
   &__text-content {
     position: absolute;
-    top: 100%;
-    transform: translateY(-100%) translateX(-50%);
+    top: 80%;
+    transform: translateX(-50%);
     left: 50%;
     width: 100%;
     margin: 0 auto;
     text-align: center;
 
-    @media screen and (max-width: 1200px) {
-      position: absolute;
-      top: 105%;
-      transform: translateY(-105%) translateX(-50%);
-      left: 50%;
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-    }
+        @mixin atSmall {
+          position: absolute;
+          top: 115%;
+          transform: translateY(-115%) translateX(-50%);
+          left: 50%;
+        }
+        
+        @mixin atMedium {
+          position: absolute;
+          top: 100%;
+          transform: translateY(-100%) translateX(-50%);
+          left: 50%;
+        }
   }
 
     &__contact-info {
@@ -34,13 +38,17 @@
     &__description {
       color: #mainBlue;
       font-family: 'Lato', sans-serif;
-      font-size: 1.5rem;
+      font-size: .7rem;
       font-weight: 400;
       margin: 0 auto;
 
-/*      @mixin atSmall {
-        font-size: 1.875rem;
-      }*/
+      @mixin atSmall {
+        font-size: 1.2rem;
+      }
+
+      @mixin atMedium {
+        font-size: 1.5rem;
+      }
     }
 
 }

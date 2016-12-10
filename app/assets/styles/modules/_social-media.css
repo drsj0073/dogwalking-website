@@ -1,15 +1,31 @@
 .social-media {
 
-	margin: 40px 0 40px 0;
+	margin: 130px 0 40px 0;
+	background-color: #F4F8F8;
 
-	background-color: #EFEFEF;
+	@mixin atSmall {
+
+	}
+
+	@mixin atMedium {
+		margin: 40px 0 40px 0;
+	}
 	
 	p {
 		font-family: 'Lato', sans-serif;
 		font-weight: 300;
-		font-size: 24px;
+		font-size: .9rem;
 		color: #3F5765;
 		letter-spacing: 1px;
 		margin: 0 0 21px 0;
+		text-align: center;
+
+		@mixin atSmall {
+			font-size: 1.2rem;
+		}
+
+		@mixin atMedium {
+			font-size: 1.6rem;
+		}
 	}
 }

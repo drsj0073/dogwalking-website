@@ -4,8 +4,11 @@
 	background-color: $mainOrange;
 	margin-right: 15px;
 	background-color: #fff;
-	box-shadow: 10px 10px 10px 0 rgba(63,87,101,0.50);
-	transition: all .5s;
+		
+		@mixin atLarge {
+			box-shadow: 10px 10px 10px 0 rgba(63,87,101,0.50);
+			transition: all .5s;
+		}
 
 	&__content {
 		margin: 0 auto;
@@ -57,8 +60,11 @@
 }
 
 .price-box:hover {
-	transform: scale(.9);
-	box-shadow: 5px 5px 5px 0 rgba(63,87,101,0.50);
+		
+		@mixin atLarge {
+			transform: scale(.9);
+			box-shadow: 5px 5px 5px 0 rgba(63,87,101,0.50);
+		}
 }
 
 
