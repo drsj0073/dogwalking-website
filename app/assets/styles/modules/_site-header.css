@@ -8,9 +8,11 @@
 	&__logo {
 		display: none;
 
+
 		@mixin atMedium{
 			display: inline-block;
 			margin-right: 40px;
+			z-index: 200;
 		}
 	}
 

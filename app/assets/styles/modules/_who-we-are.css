@@ -5,16 +5,28 @@
 	&__gallery {
 		flex-direction: row;
 		flex-wrap: nowrap;
+
+		@mixin atSmall {
+			text-align: center;
+		}
 	}
 
 	img {
-		margin-right: 15px;
 		transition: transform .5s; 
 		min-width: 100%;
 
-		@mixin atMedium {
-			min-width: 15%;
+		@mixin atSmall {
+			min-width: 80%;
 			height: auto;
+		}
+
+		@mixin atMedium {
+			min-width: 30%;
+			margin: 0 auto;
+		}
+
+		@mixin atLarge {
+			min-width: 15%;
 		}
 	}
 

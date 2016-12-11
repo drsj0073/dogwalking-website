@@ -12,15 +12,15 @@
 
         @mixin atSmall {
           position: absolute;
-          top: 115%;
-          transform: translateY(-115%) translateX(-50%);
+          top: 85%;
+          transform: translateX(-50%);
           left: 50%;
         }
         
         @mixin atMedium {
           position: absolute;
-          top: 100%;
-          transform: translateY(-100%) translateX(-50%);
+          top: 75%;
+          transform: translateX(-50%);
           left: 50%;
         }
   }

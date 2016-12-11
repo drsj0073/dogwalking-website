@@ -1,62 +1,112 @@
 .price-box {
 	display: flex;
-	flex-direction: row;
-	background-color: $mainOrange;
-	margin-right: 15px;
 	background-color: #fff;
+	text-align: center;
+	flex-direction: column;
+	width: 95%;
+	margin: 10px auto;
+
+		@mixin atSmall {
+			width: 75%;
+		}
+
+		@mixin atMedium {
+			margin: 10px auto;
+			width: 30%;
+
+		}
 		
 		@mixin atLarge {
 			box-shadow: 10px 10px 10px 0 rgba(63,87,101,0.50);
 			transition: all .5s;
+			margin: 10px auto;
+			width: 32%;
 		}
 
-	&__content {
-		margin: 0 auto;
-		text-align: center;
-	}
 
 	&__title {
 		font-family: 'Kalam', cursive;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 300;
 		color: #FFFFFF;
 		background-color: $mainOrange;
 		letter-spacing: 1px;
-		padding: 15px 45px;
+		padding: 15px 20px;
 		text-align: center;
 		margin: 0;
-		white-space: nowrap;
+
+		@mixin atSmall {
+			font-size: 1.8rem;
+		}
+
+		@mixin atMedium {
+			font-size: 1.3rem;
+		}
+
+		@mixin atLarge {
+			font-size: 2rem;
+		}
 	}
+
 
 	p {
 		font-family: 'Lato', sans-serif;
-		padding: 5px 35px;
-		text-align: left;
-		margin: 0;
-		font-size: 1.375rem;
+		padding: 5px;
+		font-size: 1.2rem;
 		color: $mainBlue;
 		letter-spacing: 1px;
+		margin: 0 auto;
+
+		@mixin atMedium {
+			font-size: 1rem;
+			margin: 10px;
+			text-align: le
+		}
+
+		@mixin atLarge {
+			font-size: 1.2rem;
+			margin: 10px;
+			text-align: center;
+			padding: 5px 35px;
+		}
+	}
+
+	h4 {
+		font-size: 1.5rem;
+
+		@mixin atMedium {
+			font-size: 1.2rem;
+		}
 	}
 
 	&__number {
 		font-family: 'Lato', sans-serif;
-		font-size: 4rem;
+		font-size: 2.5rem;
 		font-weight: 900;
 		color: #FF530D;
 		letter-spacing: 2.66px;
-		text-align: center;
-		margin: 35px 105px;
+		margin: 10px auto;
+
+		@mixin atMedium {
+			font-size: 2.8rem;
+		}
 	}
 
 	&__image-container {
 		background-color: $mainBlue;
-		padding: 35px 80px;
+		padding: 35px 40px;
 	}
 
 	&__description {
-		padding: 0 10px 30px 10px;
+		border: 3px solid $mainOrange;
 		white-space: nowrap;
+		padding-bottom: 10px;
+
+			@mixin atLarge {
+				border: none;
+			}
 	}
+
 }
 
 .price-box:hover {
